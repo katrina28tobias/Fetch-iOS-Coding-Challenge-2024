@@ -1,6 +1,5 @@
 # Fetch-iOS-Coding-Challenge-2024
-Goal: write a native iOS app that allows users to browse recipe using the given api from MealDB. This exercise focused on the category desserts.
-Note for the reviewer: while the UIKit was used to construct the ViewControllers, some elements of SwiftUI were used to parse through the json file (more details below).
+Goal: write a native iOS app that allows users to browse recipe using the given api from MealDB. This exercise focused on the desserts category.
 
 # ViewController.swift w/ Main Components
 class DessertCell: used to display the name of the dessert
@@ -25,3 +24,6 @@ func viewWillAppear(): used to update the textViews of the screen; since the rec
 func updateRecipeAndIngredients: asynchronous function that fetches the data given the url and food id. Information is appended into a String array in the following order: [Dessert Directions, Dessert Measurements and Ingredients]. 
 
 func getIngredientsAndMeasurements(): helper function that combines the correct ingredient with its correct measurement; filtering component of the exercise is done here by checking if the value is empty/null; returns a string separated by "\n" to display the ingredients in a list-like form.
+
+# Final Note for the Reviewer:
+While the UIKit was used to construct the ViewControllers, some elements of SwiftUI were used to parse through the json file. For more details on code, see swift files (they are commented!).
