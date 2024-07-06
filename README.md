@@ -26,4 +26,4 @@ func updateRecipeAndIngredients: asynchronous function that fetches the data giv
 func getIngredientsAndMeasurements(): helper function that combines the correct ingredient with its correct measurement; filtering component of the exercise is done here by checking if the value is empty/null; returns a string separated by "\n" to display the ingredients in a list-like form.
 
 # Final Note for the Reviewer:
-While the UIKit was used to construct the ViewControllers, some elements of SwiftUI were used to parse through the json file. For more details on code, see swift files (they are commented!).
+While the UIKit was used to construct the ViewControllers, some elements of SwiftUI were used to parse through the json file. For more details on code, see swift files (they are commented!). Also, for some reason, the simulator crashes on the dessert "Bakewell Tart". Not sure why, but would like to give you a heads up before testing.
